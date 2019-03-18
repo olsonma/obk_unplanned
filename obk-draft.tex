@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage[]{graphicx}\usepackage[]{color}
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+
+\usepackage{alltt}[11pt]
+
+\usepackage{longtable}                        % for tables that break over multiple pages
+\usepackage[pdftex]{lscape}
+\usepackage[margin=1.0in, bottom=0.5in, includehead, includefoot]{geometry}
+\usepackage{amssymb,amsmath,bm,graphicx,epsfig,topcapt,colortbl,array,color}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{afterpage}
+\usepackage{color}
+    \definecolor{grey}{rgb}{.4,.4,.4}
+    \definecolor{lightgrey}{rgb}{.6,.6,.6}
+    \definecolor{verylightgrey}{rgb}{.9,.9,.9}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12pt}{3}\usefont{T1}{ppl}{b}{sc}\selectfont}
+\subsectionfont{\fontsize{10pt}{3}\usefont{T1}{ppl}{b}{n}\selectfont}
+\subsubsectionfont{\fontsize{10pt}{3}\usefont{T1}{ppl}{m}{n}\selectfont}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\fancyhf{}
+
+\fancyhead{}
+%\renewcommand{\footrule}{\color{blue} \footrule}
+\fancyfoot[R]{\color{grey} \footnotesize }
+\fancyfoot[C]{\color{grey} \footnotesize \thepage\ / \pageref{LastPage}}
+
+\title{A comparison of approaches for unplanned sample size changes in phase {II} clinical trials}
+\author{Molly Olson, Jeffrey Blume \& Tatsuki Koyama}
+\newcommand*{\shorttitle}{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\section*{Abstract}
+
+\section{Introduction}
+Simon's designs are common. They cannot handle sample size chnage well.
+
+\section{Deviation from planned sample size in second stage}
+
+\section{Deviation from planned sample size in first stage}
+
+\subsection{Theirs}
+
+\subsection{Ours}
+
+\section{Simulation Study}
+Papers. \cite{Porcher, Simon, Koyama}
+
+\section{Discussion}
+
+\bibliographystyle{ieeetr}
+\bibliography{../ThesisRepo/thesisBib}
+
+\end{document}
